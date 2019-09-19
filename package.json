@@ -1,0 +1,26 @@
+{
+  "name": "grnxx-tmp-typescript",
+  "version": "1.0.0",
+  "description": "A template for Typescript based projects",
+  "main": "dist/index.js",
+  "repository": "git@github_griftynoxx:griftynoxx/grnxx-tmp-typescript.git",
+  "homepage": "https://github.com/griftynoxx/grnxx-tmp-typescript",
+  "author": "Griftynoxx",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "tslint -c tslint.json -p tsconfig.json && tsc",
+    "start": "node dist/demo.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
+    "jest-mock-console": "^1.0.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
